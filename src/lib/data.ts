@@ -197,3 +197,47 @@ export const reasons: Reason[] = [
       "Only FDA-cleared devices and clinically studied protocols. New does not mean better, and we test before we adopt.",
   },
 ];
+
+export type BeforeAfter = {
+  image: string;
+  treatment: string;
+  duration: string;
+};
+
+export const beforeAfterResults: BeforeAfter[] = [
+  {
+    image:
+      "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=800&q=80",
+    treatment: "Laser Resurfacing",
+    duration: "3 sessions",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80",
+    treatment: "Acne & Scar Program",
+    duration: "12 weeks",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&w=800&q=80",
+    treatment: "Skin Brightening Peel",
+    duration: "4 sessions",
+  },
+];
+
+export const footerClinicLinks: string[] = [
+  "About",
+  "Our Doctor",
+  "Results",
+  "Reviews",
+  "Careers",
+];
+
+export const socialLinks: string[] = ["IG", "FB", "TT"];
+
+export const treatmentOptions: string[] = [
+  "Consultation",
+  "Hydrafacial",
+  "Laser Resurfacing",
+  "Dermal Fillers",
+];

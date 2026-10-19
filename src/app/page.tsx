@@ -5,6 +5,10 @@ import About from "@/components/sections/About";
 import Treatments from "@/components/sections/Treatments";
 import Doctor from "@/components/sections/Doctor";
 import Reasons from "@/components/sections/Reasons";
+import Results from "@/components/sections/Results";
+import Testimonials from "@/components/sections/Testimonials";
+import Booking from "@/components/sections/Booking";
+import Footer from "@/components/sections/Footer";
 
 export default function Home() {
   return (
@@ -17,7 +21,11 @@ export default function Home() {
         <Treatments />
         <Doctor />
         <Reasons />
+        <Results />
+        <Testimonials />
+        <Booking />
       </main>
+      <Footer />
     </>
   );
 }
