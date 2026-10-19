@@ -119,3 +119,16 @@ export const clinicInfo = {
 // clinic photography in `public/images` before the WordPress rebuild.
 export const heroImage =
   "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80";
+
+export const treatmentPills: string[] = [
+  "Laser Resurfacing",
+  "Hydrafacial",
+  "Dermal Fillers",
+  "Chemical Peel",
+  "Microneedling",
+  "Acne & Scars",
+  "Anti-Wrinkle",
+  "Skin Brightening",
+  "Collagen Boost",
+  "Laser Hair Removal",
+];

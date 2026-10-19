@@ -27,8 +27,8 @@ export default function Hero() {
         }}
       />
 
-      <div className="wrap relative z-10 grid items-center gap-15 lg:grid-cols-[1.05fr_0.95fr]">
-        <div>
+      <div className="wrap relative z-10 grid gap-15 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
+        <div className="lg:col-start-1 lg:row-start-1">
           <div className="flex items-center gap-3.5 text-[11px] font-medium tracking-[0.28em] text-rose uppercase before:h-px before:w-7 before:bg-rose">
             Aesthetic &amp; Dermatology Clinic
           </div>
@@ -53,26 +53,9 @@ export default function Hero() {
               View Treatments
             </Button>
           </div>
-
-          <div className="mt-11.5 flex max-w-130 items-center gap-4.5 border-t border-line pt-7">
-            <div className="flex">
-              <span className="-ml-0 h-9.5 w-9.5 rounded-999 border-2 border-cream bg-lav" />
-              <span className="-ml-2.5 h-9.5 w-9.5 rounded-999 border-2 border-cream bg-rose-2" />
-              <span className="-ml-2.5 h-9.5 w-9.5 rounded-999 border-2 border-cream bg-[#D5C4B8]" />
-              <span className="-ml-2.5 h-9.5 w-9.5 rounded-999 border-2 border-cream bg-[#CFCAD8]" />
-            </div>
-            <div>
-              <div className="text-[13px] tracking-[2px] text-gold">
-                ★★★★★ <b className="text-[15px] font-medium text-ink">4.9</b>
-              </div>
-              <small className="block text-[13px] text-muted">
-                Trusted by 10,000+ clients since {clinicInfo.foundedYear}
-              </small>
-            </div>
-          </div>
         </div>
 
-        <div className="relative h-[620px]">
+        <div className="relative h-[620px] lg:col-start-2 lg:row-start-1 lg:row-span-2">
           <div className="absolute top-17.5 left-0 h-57.5 w-57.5 rounded-full border border-rose opacity-70">
             <div className="absolute inset-4.5 rounded-full border border-dashed border-rose opacity-60" />
           </div>
@@ -91,7 +74,7 @@ export default function Hero() {
           <div className="absolute -top-4.5 right-7.5 grid h-30 w-30 place-items-center rounded-full bg-ink text-white">
             <svg
               viewBox="0 0 120 120"
-              className="absolute inset-0 h-full w-full animate-[spin_16s_linear_infinite]"
+              className="absolute inset-0 h-full w-full animate-[spin_16s_linear_infinite] motion-reduce:animate-none"
             >
               <defs>
                 <path
@@ -120,6 +103,23 @@ export default function Hero() {
               <b className="block text-[15px] font-medium">Would recommend</b>
               <small className="block text-muted">Based on 2,400 reviews</small>
             </div>
+          </div>
+        </div>
+
+        <div className="flex max-w-130 items-center gap-4.5 border-t border-line pt-7 lg:col-start-1 lg:row-start-2">
+          <div className="flex">
+            <span className="-ml-0 h-9.5 w-9.5 rounded-999 border-2 border-cream bg-lav" />
+            <span className="-ml-2.5 h-9.5 w-9.5 rounded-999 border-2 border-cream bg-rose-2" />
+            <span className="-ml-2.5 h-9.5 w-9.5 rounded-999 border-2 border-cream bg-[#D5C4B8]" />
+            <span className="-ml-2.5 h-9.5 w-9.5 rounded-999 border-2 border-cream bg-[#CFCAD8]" />
+          </div>
+          <div>
+            <div className="text-[13px] tracking-[2px] text-gold">
+              ★★★★★ <b className="text-[15px] font-medium text-gold">4.9</b>
+            </div>
+            <small className="block text-[13px] text-muted">
+              Trusted by 10,000+ clients since {clinicInfo.foundedYear}
+            </small>
           </div>
         </div>
       </div>

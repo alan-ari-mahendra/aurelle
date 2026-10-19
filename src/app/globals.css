@@ -50,6 +50,12 @@
   }
 }
 
+@keyframes marquee-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 @layer components {
   /* Container token: min(1180px, 100% - 48px), matches the prototype's .wrap */
   .wrap {
