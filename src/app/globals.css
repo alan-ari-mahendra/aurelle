@@ -31,6 +31,10 @@
   /* Fonts */
   --font-serif: var(--font-cormorant), Georgia, serif;
   --font-sans: var(--font-jost), "Helvetica Neue", Arial, sans-serif;
+
+  /* Animations -> animate-marquee / animate-badge-spin */
+  --animate-marquee: marquee-scroll 40s linear infinite;
+  --animate-badge-spin: badge-spin 16s linear infinite;
 }
 
 @layer base {
@@ -53,6 +57,12 @@
 @keyframes marquee-scroll {
   to {
     transform: translateX(-50%);
+  }
+}
+
+@keyframes badge-spin {
+  to {
+    transform: rotate(1turn);
   }
 }
 

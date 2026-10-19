@@ -74,7 +74,7 @@ export default function Hero() {
           <div className="absolute -top-4.5 right-7.5 grid h-30 w-30 place-items-center rounded-full bg-ink text-white">
             <svg
               viewBox="0 0 120 120"
-              className="absolute inset-0 h-full w-full animate-[spin_16s_linear_infinite] motion-reduce:animate-none"
+              className="absolute inset-0 h-full w-full animate-badge-spin motion-reduce:animate-none"
             >
               <defs>
                 <path

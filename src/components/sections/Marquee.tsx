@@ -5,7 +5,7 @@ export default function Marquee() {
 
   return (
     <div className="overflow-hidden border-y border-line bg-white py-5.5">
-      <div className="flex w-max gap-3.5 animate-[marquee-scroll_40s_linear_infinite] motion-reduce:animate-none">
+      <div className="flex w-max gap-3.5 animate-marquee motion-reduce:animate-none">
         {pills.map((pill, index) => (
           <span
             key={`${pill}-${index}`}
