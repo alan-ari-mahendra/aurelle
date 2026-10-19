@@ -13,7 +13,7 @@ export default function Footer() {
           <div>
             <Link
               href="#"
-              className="flex items-center gap-2.5 font-serif text-[22px] tracking-[0.22em] text-white uppercase"
+              className="flex min-h-11 items-center gap-2.5 font-serif text-[22px] tracking-[0.22em] text-white uppercase"
             >
               <span className="flex h-7.5 w-7.5 items-center justify-center rounded-999 border border-rose-2 text-sm text-rose-2">
                 a
@@ -60,7 +60,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-wrap items-center justify-between gap-3 pt-6.5 text-xs text-white/45">
+        <div className="flex flex-wrap items-center justify-between gap-3 pt-6.5 text-xs text-white/65">
           <span>
             © {COPYRIGHT_YEAR} {clinicInfo.name} Skin Clinic. All rights reserved.
           </span>

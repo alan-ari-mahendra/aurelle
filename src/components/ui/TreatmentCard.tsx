@@ -10,7 +10,7 @@ type TreatmentCardProps = {
 export default function TreatmentCard({ treatment, icon }: TreatmentCardProps) {
   return (
     <div className="group relative overflow-hidden rounded-24 border border-line bg-cream p-8.5 pb-7.5 transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-[0_30px_60px_-36px_rgba(42,38,48,.3)]">
-      <span className="absolute top-5 right-5.5 font-serif text-[22px] text-rose-2 italic">
+      <span aria-hidden="true" className="absolute top-5 right-5.5 font-serif text-[22px] text-rose-2 italic">
         {treatment.number}
       </span>
 
@@ -23,12 +23,12 @@ export default function TreatmentCard({ treatment, icon }: TreatmentCardProps) {
 
       <div className="mt-6 flex items-center justify-between border-t border-line pt-5 text-[13px]">
         <div>
-          <small className="block text-[11px] tracking-[0.1em] text-muted uppercase">
+          <small className="block text-[11px] tracking-[0.1em] text-ink-2 uppercase">
             From
           </small>
           <b className="text-[15px] font-medium">{treatment.priceFrom}</b>
         </div>
-        <Link href="#book" className="flex items-center gap-2 font-medium text-rose">
+        <Link href="#book" className="flex min-h-11 items-center gap-2 font-medium text-rose">
           Book
           <svg
             viewBox="0 0 24 24"

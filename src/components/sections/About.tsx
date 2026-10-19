@@ -40,7 +40,7 @@ export default function About() {
                 <b className="block font-serif text-[34px] leading-none font-medium">
                   {stat.value}
                 </b>
-                <small className="mt-1.5 block text-[13px] text-muted">{stat.label}</small>
+                <small className="mt-1.5 block text-[13px] text-ink-2">{stat.label}</small>
               </div>
             ))}
           </div>

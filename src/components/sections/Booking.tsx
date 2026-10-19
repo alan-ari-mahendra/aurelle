@@ -31,7 +31,7 @@ export default function Booking() {
                 className="flex justify-between border-t border-line py-2.5 text-sm text-ink-2"
               >
                 <span>{hour.day}</span>
-                <b className={`font-medium ${hour.closed ? "text-muted" : "text-ink"}`}>
+                <b className={`font-medium ${hour.closed ? "text-ink-2" : "text-ink"}`}>
                   {hour.time}
                 </b>
               </div>

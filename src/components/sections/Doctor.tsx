@@ -21,7 +21,7 @@ export default function Doctor() {
           </div>
           <div className="absolute top-10 -right-7.5 rounded-[18px] bg-white p-5.5 text-[13px] shadow-[0_20px_40px_-20px_rgba(42,38,48,.3)] max-[720px]:right-0">
             <b className="block font-serif text-xl font-medium">{doctor.name}</b>
-            <small className="text-muted">{doctor.title}</small>
+            <small className="text-ink-2">{doctor.title}</small>
           </div>
         </div>
 

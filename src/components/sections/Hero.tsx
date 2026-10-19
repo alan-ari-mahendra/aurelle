@@ -92,7 +92,7 @@ export default function Hero() {
 
           <div className="absolute bottom-30 -left-2.5 min-w-57.5 rounded-[20px] border border-white/70 bg-white/92 px-5 py-4.5 text-[13px] shadow-[0_24px_50px_-24px_rgba(42,38,48,.35)] backdrop-blur-[10px]">
             <span className="mr-2 inline-block h-2 w-2 rounded-full bg-[#6FBF9A] shadow-[0_0_0_4px_rgba(111,191,154,.2)]" />
-            <small className="text-muted">Next available slot</small>
+            <small className="text-ink-2">Next available slot</small>
             <b className="mt-1 block text-[15px] font-medium">Today, 3:30 PM</b>
           </div>
 
@@ -100,7 +100,7 @@ export default function Hero() {
             <span className="font-serif text-[34px] leading-none">98%</span>
             <div>
               <b>Would recommend</b>
-              <small className="block text-muted">Based on 2,400 reviews</small>
+              <small className="block text-ink-2">Based on 2,400 reviews</small>
             </div>
           </div>
         </div>
@@ -113,10 +113,13 @@ export default function Hero() {
             <span className="-ml-2.5 h-9.5 w-9.5 rounded-999 border-2 border-cream bg-[#CFCAD8]" />
           </div>
           <div>
-            <div className="text-[13px] tracking-[2px] text-gold">
-              ★★★★★ <b className="text-[15px] font-medium text-gold">4.9</b>
+            <div className="text-[13px] tracking-[2px]">
+              <span aria-hidden="true" className="text-gold">
+                ★★★★★
+              </span>{" "}
+              <b className="text-[15px] font-medium text-ink">4.9</b>
             </div>
-            <small className="block text-[13px] text-muted">
+            <small className="block text-[13px] text-ink-2">
               Trusted by 10,000+ clients since {clinicInfo.foundedYear}
             </small>
           </div>

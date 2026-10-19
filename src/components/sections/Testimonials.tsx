@@ -21,7 +21,8 @@ export default function Testimonials() {
               className={`relative rounded-24 bg-white p-8.5 ${index === 1 ? "min-[1025px]:translate-y-10" : ""}`}
             >
               <span className="absolute top-7.5 right-7 text-xs tracking-[2px] text-gold">
-                {"★".repeat(testimonial.rating)}
+                <span aria-hidden="true">{"★".repeat(testimonial.rating)}</span>
+                <span className="sr-only">{testimonial.rating} out of 5 stars</span>
               </span>
               <div className="mb-5 font-serif text-[60px] leading-[0.6] text-rose-2">&ldquo;</div>
               <p className="mb-6.5 text-[15px] text-ink-2">{testimonial.quote}</p>
@@ -29,7 +30,7 @@ export default function Testimonials() {
                 <span className={`h-11 w-11 rounded-full ${avatarColors[index % avatarColors.length]}`} />
                 <div>
                   <b className="block text-sm font-medium">{testimonial.name}</b>
-                  <small className="text-xs text-muted">{testimonial.context}</small>
+                  <small className="text-xs text-ink-2">{testimonial.context}</small>
                 </div>
               </div>
             </div>

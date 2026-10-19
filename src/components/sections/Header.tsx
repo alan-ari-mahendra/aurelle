@@ -13,7 +13,7 @@ export default function Header() {
       <div className="wrap flex items-center justify-between gap-6">
         <Link
           href="#"
-          className="flex items-center gap-2.5 font-serif text-[22px] tracking-[0.22em] uppercase"
+          className="flex min-h-11 items-center gap-2.5 font-serif text-[22px] tracking-[0.22em] uppercase"
         >
           <span className="flex h-7.5 w-7.5 items-center justify-center rounded-999 border border-rose text-sm text-rose">
             a
@@ -23,7 +23,11 @@ export default function Header() {
 
         <nav className="hidden items-center gap-8 text-sm text-ink-2 md:flex">
           {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="hover:text-ink">
+            <Link
+              key={link.href}
+              href={link.href}
+              className="flex min-h-11 items-center hover:text-ink"
+            >
               {link.label}
             </Link>
           ))}
@@ -41,7 +45,7 @@ export default function Header() {
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
           onClick={() => setOpen((value) => !value)}
-          className="grid h-10 w-10 shrink-0 place-items-center rounded-999 border border-line md:hidden"
+          className="grid h-11 w-11 shrink-0 place-items-center rounded-999 border border-line md:hidden"
         >
           <span className="relative block h-px w-4 bg-ink before:absolute before:-top-1.5 before:left-0 before:h-px before:w-4 before:bg-ink after:absolute after:top-1.5 after:left-0 after:h-px after:w-4 after:bg-ink" />
         </button>
