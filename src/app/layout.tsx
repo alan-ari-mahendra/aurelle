@@ -36,6 +36,10 @@ export const metadata: Metadata = {
     ],
     type: "website",
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
