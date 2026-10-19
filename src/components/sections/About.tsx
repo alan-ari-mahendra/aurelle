@@ -9,8 +9,8 @@ export default function About() {
         <div className="relative">
           <div className="relative aspect-[4/5] overflow-hidden rounded-28 bg-lav-2">
             <Image
-              src={aboutImages.main}
-              alt="Aurelle Skin Clinic treatment room"
+              src={aboutImages.main.src}
+              alt={aboutImages.main.alt}
               fill
               sizes="(min-width: 1024px) 540px, 90vw"
               className="object-cover"
@@ -18,8 +18,8 @@ export default function About() {
           </div>
           <div className="absolute -left-10 bottom-15 aspect-square w-[46%] overflow-hidden rounded-full border-[10px] border-cream shadow-[0_30px_60px_-30px_rgba(42,38,48,.3)] max-[720px]:-bottom-5 max-[720px]:left-0 max-[720px]:w-[40%]">
             <Image
-              src={aboutImages.sub}
-              alt="Close-up of a skincare consultation"
+              src={aboutImages.sub.src}
+              alt={aboutImages.sub.alt}
               fill
               sizes="300px"
               className="object-cover"

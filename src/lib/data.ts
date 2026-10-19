@@ -115,10 +115,10 @@ export const clinicInfo = {
   foundedYear: 2011,
 };
 
-// Temporary stock placeholders from the HTML prototype, swap for real
-// clinic photography in `public/images` before the WordPress rebuild.
-export const heroImage =
-  "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80";
+export const heroImage = {
+  src: "/images/hero-treatment.jpg",
+  alt: "Esthetician applying a brightening facial mask to a client at Aurelle Skin Clinic",
+};
 
 export const treatmentPills: string[] = [
   "Laser Resurfacing",
@@ -134,8 +134,14 @@ export const treatmentPills: string[] = [
 ];
 
 export const aboutImages = {
-  main: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=80",
-  sub: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=600&q=80",
+  main: {
+    src: "/images/about-clinic-main.jpg",
+    alt: "Client receiving a relaxing facial treatment with a warm towel wrap at Aurelle Skin Clinic",
+  },
+  sub: {
+    src: "/images/about-consultation-detail.jpg",
+    alt: "Close-up of an esthetician's hands during a precise skincare consultation",
+  },
 };
 
 export const aboutCopy =
@@ -155,8 +161,10 @@ export const aboutStats: Stat[] = [
 export const doctor = {
   name: "Dr. Elena Marchetti",
   title: "Board-certified dermatologist",
-  image:
-    "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=900&q=80",
+  image: {
+    src: "/images/doctor-portrait.jpg",
+    alt: "Portrait of Dr. Elena Marchetti, board-certified dermatologist at Aurelle Skin Clinic",
+  },
   bio: [
     "Dr. Marchetti has spent over fifteen years in medical and aesthetic dermatology, with a focus on conservative, long-term skin health rather than quick fixes.",
     "Every first visit includes a 30-minute consultation and digital skin analysis, so your plan is built on evidence, not assumptions.",
@@ -200,26 +208,27 @@ export const reasons: Reason[] = [
 
 export type BeforeAfter = {
   image: string;
+  alt: string;
   treatment: string;
   duration: string;
 };
 
 export const beforeAfterResults: BeforeAfter[] = [
   {
-    image:
-      "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=800&q=80",
+    image: "/images/result-laser-resurfacing.jpg",
+    alt: "Skin texture result after a laser resurfacing treatment course",
     treatment: "Laser Resurfacing",
     duration: "3 sessions",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80",
+    image: "/images/result-acne-scar-program.jpg",
+    alt: "Skin clarity result after an acne and scar treatment program",
     treatment: "Acne & Scar Program",
     duration: "12 weeks",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&w=800&q=80",
+    image: "/images/result-skin-brightening.jpg",
+    alt: "Skin tone result after a skin brightening peel course",
     treatment: "Skin Brightening Peel",
     duration: "4 sessions",
   },

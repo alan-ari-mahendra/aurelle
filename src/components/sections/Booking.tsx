@@ -24,7 +24,7 @@ export default function Booking() {
 
         <div className="lg:col-start-1 lg:row-start-2">
           <div className="max-w-110 rounded-24 border border-line bg-white p-7.5">
-            <h4 className="mb-4 text-2xl font-medium">Opening hours</h4>
+            <h3 className="mb-4 text-2xl font-medium">Opening hours</h3>
             {hours.map((hour) => (
               <div
                 key={hour.day}

@@ -25,7 +25,7 @@ export default function Results() {
               <div className="relative aspect-[4/4.6] overflow-hidden rounded-24 bg-cream-2">
                 <Image
                   src={result.image}
-                  alt={`${result.treatment} before and after result`}
+                  alt={result.alt}
                   fill
                   sizes="(min-width: 1025px) 370px, (min-width: 721px) 50vw, 90vw"
                   className="object-cover"

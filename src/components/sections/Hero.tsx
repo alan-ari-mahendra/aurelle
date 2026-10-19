@@ -61,8 +61,8 @@ export default function Hero() {
 
           <div className="absolute top-0 right-0 h-full w-[78%] overflow-hidden rounded-t-999 rounded-b-28 shadow-2xl">
             <Image
-              src={heroImage}
-              alt="Aurelle Skin Clinic treatment room"
+              src={heroImage.src}
+              alt={heroImage.alt}
               fill
               sizes="(min-width: 1024px) 460px, 90vw"
               className="object-cover"

@@ -27,9 +27,9 @@ export default function Footer() {
           </div>
 
           <div>
-            <h5 className="mb-4.5 text-[11px] font-medium tracking-[0.22em] text-rose-2 uppercase">
+            <h3 className="mb-4.5 text-[11px] font-medium tracking-[0.22em] text-rose-2 uppercase">
               Treatments
-            </h5>
+            </h3>
             <ul className="grid gap-2.5 text-sm text-white/72">
               {treatmentLinks.map((name) => (
                 <li key={name}>{name}</li>
@@ -38,9 +38,9 @@ export default function Footer() {
           </div>
 
           <div>
-            <h5 className="mb-4.5 text-[11px] font-medium tracking-[0.22em] text-rose-2 uppercase">
+            <h3 className="mb-4.5 text-[11px] font-medium tracking-[0.22em] text-rose-2 uppercase">
               Clinic
-            </h5>
+            </h3>
             <ul className="grid gap-2.5 text-sm text-white/72">
               {footerClinicLinks.map((name) => (
                 <li key={name}>{name}</li>
@@ -49,9 +49,9 @@ export default function Footer() {
           </div>
 
           <div>
-            <h5 className="mb-4.5 text-[11px] font-medium tracking-[0.22em] text-rose-2 uppercase">
+            <h3 className="mb-4.5 text-[11px] font-medium tracking-[0.22em] text-rose-2 uppercase">
               Contact
-            </h5>
+            </h3>
             <ul className="grid gap-2.5 text-sm text-white/72">
               <li>{clinicInfo.address}</li>
               <li>{clinicInfo.phone}</li>

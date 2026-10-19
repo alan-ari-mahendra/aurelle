@@ -12,8 +12,8 @@ export default function Doctor() {
         <div className="relative">
           <div className="relative aspect-[4/5] overflow-hidden rounded-t-28 rounded-b-[240px] bg-rose-3">
             <Image
-              src={doctor.image}
-              alt={doctor.name}
+              src={doctor.image.src}
+              alt={doctor.image.alt}
               fill
               sizes="(min-width: 1024px) 480px, 90vw"
               className="object-cover"
