@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "@/components/ui/Button";
+import Eyebrow from "@/components/ui/Eyebrow";
 import { clinicInfo, heroImage } from "@/lib/data";
 
 export default function Hero() {
@@ -29,9 +30,7 @@ export default function Hero() {
 
       <div className="wrap relative z-10 grid gap-15 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
         <div className="lg:col-start-1 lg:row-start-1">
-          <div className="flex items-center gap-3.5 text-[11px] font-medium tracking-[0.28em] text-rose uppercase before:h-px before:w-7 before:bg-rose">
-            Aesthetic &amp; Dermatology Clinic
-          </div>
+          <Eyebrow>Aesthetic &amp; Dermatology Clinic</Eyebrow>
 
           <h1 className="mt-5.5 mb-6.5 text-[clamp(46px,6.2vw,84px)]">
             <span className="block">Skin that feels</span>

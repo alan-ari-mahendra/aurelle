@@ -78,7 +78,11 @@
     padding-block: var(--spacing-section-y);
   }
 
-  @media (width < 720px) {
+  @media (width < 721px) {
+    .wrap {
+      width: calc(100% - 40px);
+    }
+
     .section-padding {
       padding-block: var(--spacing-section-y-mobile);
     }

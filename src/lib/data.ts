@@ -132,3 +132,68 @@ export const treatmentPills: string[] = [
   "Collagen Boost",
   "Laser Hair Removal",
 ];
+
+export const aboutImages = {
+  main: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=80",
+  sub: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=600&q=80",
+};
+
+export const aboutCopy =
+  "We believe great skin is the result of science, patience and care. Every treatment plan starts with a thorough skin analysis, so you only receive what your skin actually needs.";
+
+export type Stat = {
+  value: string;
+  label: string;
+};
+
+export const aboutStats: Stat[] = [
+  { value: "15+", label: "Years of practice" },
+  { value: "10k", label: "Happy clients" },
+  { value: "32", label: "Treatments offered" },
+];
+
+export const doctor = {
+  name: "Dr. Elena Marchetti",
+  title: "Board-certified dermatologist",
+  image:
+    "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=900&q=80",
+  bio: [
+    "Dr. Marchetti has spent over fifteen years in medical and aesthetic dermatology, with a focus on conservative, long-term skin health rather than quick fixes.",
+    "Every first visit includes a 30-minute consultation and digital skin analysis, so your plan is built on evidence, not assumptions.",
+  ],
+  credentials: [
+    "MD, Dermatology",
+    "American Board of Dermatology",
+    "ASDS Member",
+    "Laser Safety Certified",
+  ],
+  quote:
+    "The best treatment is the one you barely notice, except in how confident you feel.",
+};
+
+export type Reason = {
+  number: string;
+  title: string;
+  description: string;
+};
+
+export const reasons: Reason[] = [
+  {
+    number: "01",
+    title: "Medical oversight on every visit",
+    description:
+      "All treatments are supervised by a licensed dermatologist, not sales staff. You always know who is treating you.",
+  },
+  {
+    number: "02",
+    title: "Honest, no-pressure plans",
+    description:
+      "We will tell you when a treatment is not right for you. Our consultations are about your skin, not our quotas.",
+  },
+  {
+    number: "03",
+    title: "Technology that is actually proven",
+    description:
+      "Only FDA-cleared devices and clinically studied protocols. New does not mean better, and we test before we adopt.",
+  },
+];
