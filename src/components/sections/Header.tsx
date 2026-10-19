@@ -9,11 +9,11 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="absolute inset-x-0 top-0 z-20 py-6">
+    <header className="absolute inset-x-0 top-0 z-20 py-5.5">
       <div className="wrap flex items-center justify-between gap-6">
         <Link
           href="#"
-          className="flex items-center gap-2.5 font-serif text-xl tracking-[0.22em] uppercase"
+          className="flex items-center gap-2.5 font-serif text-[22px] tracking-[0.22em] uppercase"
         >
           <span className="flex h-7.5 w-7.5 items-center justify-center rounded-999 border border-rose text-sm text-rose">
             a

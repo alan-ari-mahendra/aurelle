@@ -5,7 +5,7 @@ import { clinicInfo, heroImage } from "@/lib/data";
 
 export default function Hero() {
   return (
-    <section className="section-padding relative flex min-h-screen items-center overflow-hidden pt-37.5">
+    <section className="section-padding relative flex min-h-screen items-center overflow-hidden pt-37.5 pb-17.5">
       <div
         className="pointer-events-none absolute -top-30 -right-35 z-0 h-155 w-155 rounded-full blur-[70px]"
         style={{
@@ -28,7 +28,7 @@ export default function Hero() {
         }}
       />
 
-      <div className="wrap relative z-10 grid gap-15 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
+      <div className="wrap relative z-10 grid gap-15 lg:grid-cols-[1.05fr_0.95fr] lg:content-center">
         <div className="lg:col-start-1 lg:row-start-1">
           <Eyebrow>Aesthetic &amp; Dermatology Clinic</Eyebrow>
 
@@ -90,16 +90,16 @@ export default function Hero() {
             <span className="font-serif text-[22px] italic">est.</span>
           </div>
 
-          <div className="absolute bottom-30 -left-2.5 min-w-57.5 rounded-[20px] border border-white/70 bg-white/92 p-4.5 text-[13px] shadow-[0_24px_50px_-24px_rgba(42,38,48,.35)] backdrop-blur-[10px]">
+          <div className="absolute bottom-30 -left-2.5 min-w-57.5 rounded-[20px] border border-white/70 bg-white/92 px-5 py-4.5 text-[13px] shadow-[0_24px_50px_-24px_rgba(42,38,48,.35)] backdrop-blur-[10px]">
             <span className="mr-2 inline-block h-2 w-2 rounded-full bg-[#6FBF9A] shadow-[0_0_0_4px_rgba(111,191,154,.2)]" />
             <small className="text-muted">Next available slot</small>
             <b className="mt-1 block text-[15px] font-medium">Today, 3:30 PM</b>
           </div>
 
-          <div className="absolute bottom-12.5 -right-3.5 flex items-center gap-3.5 rounded-[20px] border border-white/70 bg-white/92 p-4.5 text-[13px] shadow-[0_24px_50px_-24px_rgba(42,38,48,.35)] backdrop-blur-[10px]">
+          <div className="absolute bottom-12.5 -right-3.5 flex items-center gap-3.5 rounded-[20px] border border-white/70 bg-white/92 px-5 py-4.5 text-[13px] shadow-[0_24px_50px_-24px_rgba(42,38,48,.35)] backdrop-blur-[10px]">
             <span className="font-serif text-[34px] leading-none">98%</span>
             <div>
-              <b className="block text-[15px] font-medium">Would recommend</b>
+              <b>Would recommend</b>
               <small className="block text-muted">Based on 2,400 reviews</small>
             </div>
           </div>
