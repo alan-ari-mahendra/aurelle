@@ -55,7 +55,7 @@ function Field({
 }
 
 function inputClass(hasError: boolean) {
-  return `w-full appearance-none rounded-14 border bg-cream px-4.5 py-3.75 text-[14.5px] font-light text-ink outline-none focus:border-rose ${
+  return `w-full appearance-none rounded-14 border bg-cream px-4.5 py-3.75 text-[14.5px] font-light text-ink focus:border-rose focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink ${
     hasError ? "border-rose" : "border-line"
   }`;
 }
@@ -98,7 +98,7 @@ export default function BookingForm() {
     return (
       <div className="rounded-28 bg-white p-11 text-center shadow-[0_40px_80px_-40px_rgba(42,38,48,.25)]">
         <h3 className="mb-2.5 text-[30px]">Request received</h3>
-        <p className="text-sm text-muted">
+        <p className="text-sm text-ink-2">
           We will confirm your slot within 2 hours during opening hours.
         </p>
       </div>
@@ -112,7 +112,7 @@ export default function BookingForm() {
       className="rounded-28 bg-white p-11 shadow-[0_40px_80px_-40px_rgba(42,38,48,.25)]"
     >
       <h3 className="mb-1.5 text-[30px]">Request an appointment</h3>
-      <p className="mb-7.5 text-sm text-muted">
+      <p className="mb-7.5 text-sm text-ink-2">
         We will confirm your slot within 2 hours during opening hours.
       </p>
 
@@ -199,7 +199,7 @@ export default function BookingForm() {
         </p>
       )}
 
-      <small className="mt-4 block text-center text-xs text-muted">
+      <small className="mt-4 block text-center text-xs text-ink-2">
         By submitting you agree to our privacy policy. We never share your data.
       </small>
     </form>
